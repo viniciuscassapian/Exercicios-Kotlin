@@ -90,3 +90,76 @@ fun main() {
         }
     }
 }
+
+#Desafio PA
+fun main() {
+
+    println("Digite o primeiro termo da PA:")
+    val primeiroTermo = readLine()!!.toInt()
+println("Digite a razão da PA:")
+    val razao = readLine()!!.toInt()
+    var soma = 0
+    var termoAtual = primeiroTermo
+    println("Os 10 primeiros termos da PA são:")
+    for (i in 1..10) {
+        println("Termo $i: $termoAtual")
+        soma += termoAtual
+        termoAtual += razao
+    }
+    println("A soma de todos os termos é: $soma")
+}
+
+#Desafio Sequência de fibbonacci
+fun main() {
+    var primeiroTermo = 0
+    var segundoTermo = 1
+ println("Os 10 primeiros termos da sequência de Fibonacci são:")
+    for (i in 1..10) {
+        println(primeiroTermo)
+        val proximoTermo = primeiroTermo + segundoTermo
+        primeiroTermo = segundoTermo
+        segundoTermo = proximoTermo
+    }
+}
+
+#Desafio Vetor
+import kotlin.random.Random
+
+fun main() {
+    val vetor = IntArray(20)
+    for (i in vetor.indices) {
+        vetor[i] = Random.nextInt(0, 100)
+    }
+    println("Números gerados aleatoriamente:")
+    for (num in vetor) {
+        println(num)
+    }
+    vetor.sort()
+    println("\nNúmeros ordenados em ordem crescente:")
+    for (num in vetor) {
+        println(num)
+    }
+}
+#Último desafio App
+
+fun main() {
+    println("Fibonacci(5):")
+    Fibonacci(5)
+    println("\nFibonacci(9):")
+    Fibonacci(9)
+}
+fun Fibonacci(n: Int) 
+    var primeiroTermo = 0
+    var segundoTermo = 1
+    for (i in 1..n) {
+        if (i == 1) {
+            print("$primeiroTermo")
+        } else {
+            print(" >> $segundoTermo")
+        }
+        val proximoTermo = primeiroTermo + segundoTermo
+        primeiroTermo = segundoTermo
+        segundoTermo = proximoTermo
+    }
+    println(" >> FIM")
+}
