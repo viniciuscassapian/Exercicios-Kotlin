@@ -13,13 +13,10 @@ fun main() {
 fun main() {
     println("Digite o comprimento do primeiro segmento de reta:")
     val a = readLine()!!.toDouble()
-
     println("Digite o comprimento do segundo segmento de reta:")
     val b = readLine()!!.toDouble()
-
     println("Digite o comprimento do terceiro segmento de reta:")
     val c = readLine()!!.toDouble()
-
     if (a + b > c && a + c > b && b + c > a) {
         println("É possível formar um triângulo.")
     } else {
@@ -31,13 +28,10 @@ fun main() {
 fun main() {
     println("Digite o comprimento do primeiro segmento de reta:")
     val a = readLine()!!.toDouble()
-
     println("Digite o comprimento do segundo segmento de reta:")
     val b = readLine()!!.toDouble()
-
     println("Digite o comprimento do terceiro segmento de reta:")
     val c = readLine()!!.toDouble()
-
     if (a + b > c && a + c > b && b + c > a) {
         when {
             a == b && b == c -> println("É um triângulo Equilátero.")
@@ -93,10 +87,9 @@ fun main() {
 
 #Desafio PA
 fun main() {
-
     println("Digite o primeiro termo da PA:")
     val primeiroTermo = readLine()!!.toInt()
-println("Digite a razão da PA:")
+    println("Digite a razão da PA:")
     val razao = readLine()!!.toInt()
     var soma = 0
     var termoAtual = primeiroTermo
@@ -141,7 +134,6 @@ fun main() {
     }
 }
 #Último desafio App
-
 fun main() {
     println("Fibonacci(5):")
     Fibonacci(5)
